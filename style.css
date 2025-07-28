@@ -700,7 +700,9 @@ footer p {
     margin-right: 0;
     display: none;
 }
-
+.gen-btn {
+    gap: 4px;
+}
 button.chatbox-footer-btn.chatbox-footer-btn-questions {
     padding: 0;
 }
@@ -709,7 +711,9 @@ button.chatbox-footer-btn.chatbox-footer-btn-questions {
         font-size: var(--12px);
         height: fit-content;
 }
-
+.chatbox-header .clear-btn {
+    display: block !important;
+}
 .footer .clear-btn {
     display: none;
 }
@@ -727,9 +731,11 @@ button.chatbox-footer-btn.chatbox-footer-btn-questions {
 .chatbox-footer-btn-questions.visible {
     padding: 9px 12px !important;
 }
-  .quick-prompts-header {
-  font-size: var(--20px);
-  }
+      .quick-prompts-header {
+        font-size: var(--20px);
+        width: 80%;
+        margin-bottom: 6px;
+    }
   .quick-prompts-cont {
     width: 100% !important;
   }
@@ -753,6 +759,10 @@ button.chatbox-footer-btn.chatbox-footer-btn-questions {
   }
 }
 
+.btn {
+    display: flex;
+    gap: 6px;
+}
 
 @media only screen and (max-width: 425px){
   

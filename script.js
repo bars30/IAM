@@ -140,6 +140,18 @@ menuButtons.forEach((btn) => {
   }
 }
 
+setTimeout(() => {
+    if (promptsSection.classList.contains("fade-out")) {
+  chatboxMessages.classList.remove("display");
+} else {
+  if (!!localStorage.getItem('chatHistory')) {
+    chatboxMessages.classList.remove("display");
+  } else {
+
+  chatboxMessages.classList.add("display");
+  }
+}
+}, 1500);
 
 function restoreChatHistory() {
   const savedHistory = localStorage.getItem("chatHistory");
